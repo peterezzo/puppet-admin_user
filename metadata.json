@@ -1,5 +1,5 @@
 {
-  "name": "peterezzo-ssh",
+  "name": "peterezzo-admin_user",
   "version": "0.0.1",
   "summary": "Puppet module for *nix admin users",
   "author": "Pete Ezzo",
