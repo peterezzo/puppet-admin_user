@@ -1,0 +1,25 @@
+{
+  "name": "peterezzo-ssh",
+  "version": "0.0.1",
+  "summary": "Puppet module for *nix admin users",
+  "author": "Pete Ezzo",
+  "description": "This module sets up a simple admin user and login by supplied ssh key",
+  "dependencies": [
+
+  ],
+  "checksums": {
+
+  },
+  "operatingsystem_support": [
+    {
+      "operatingsystem":"RedHat",
+      "operatingsystemrelease":[ "7.0" ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [ "14.04" ]
+    }
+   ],
+  "source": "https://github.com/peterezzo/lab-puppet",
+  "license": "None"
+}
