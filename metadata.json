@@ -1,7 +1,7 @@
 {
   "name": "peterezzo-admin_user",
   "version": "0.0.1",
-  "summary": "Puppet module for *nix admin users",
+  "summary": "Puppet module for provisioning *nix local auth admin users",
   "author": "Pete Ezzo",
   "description": "This module sets up a simple admin user and login by supplied ssh key",
   "dependencies": [
