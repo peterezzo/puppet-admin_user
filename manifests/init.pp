@@ -2,14 +2,14 @@
 # right now ONLY supports ONE user (at least cleanly)
 # authentication can be by password or by ssh only, or both
 class admin_user (
-  $remove_default_users = true,
-  $username = false,
-  $password = false,
-  $ssh_key = false,
-  $ssh_key_type = false,
+  $username = undef,
+  $password = undef,
+  $ssh_key = undef,
+  $ssh_key_type = undef,
   $user_shell = '/bin/bash',
   $user_managehome = true,
-  $user_builtins = [ 'centos', 'ubuntu' ]
+  $remove_default_users = true,
+  $default_users = [ 'centos', 'ubuntu' ]
 ) {
 
   if $username == false {
@@ -68,7 +68,7 @@ class admin_user (
 
   # remove cloud or temporary setup users
   if $remove_default_users {
-    user { $user_builtins:
+    user { $default_users:
       ensure     => 'absent',
       managehome => $user_managehome,
     }
